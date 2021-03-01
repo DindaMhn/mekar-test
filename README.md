@@ -1,19 +1,19 @@
-LINKAJA TEST
+MEKAR TEST
 
 1. Teknologi yang Digunakan
     - Golang
     - MySQL
 2. Cara Menjalankan Program
-        1. Import file db_mekar di dalam folder database 
-        2. Ubah DB_USER dan DB_PASSWORD di dalam file .env pada folder files dan sesuaikan
-        2. Ketik di terminal dengan command "go run main/main.go"
+    1. Import file db_mekar di dalam folder database 
+    2. Ubah DB_USER dan DB_PASSWORD di dalam file .env pada folder files dan sesuaikan   
+    3. Ketik di terminal dengan command "go run main/main.go"
 3. Output Program
     - UNTUK USER
         1. CREATE USER
             - URL => /user
             - Method : POST
             - Body :
-                - Contoh Body
+                - Contoh Body : 
                 {
                     "nama_user": "Dinda Maharani",
                     "tanggal_lahir": "1998-11-01",
@@ -124,10 +124,10 @@ LINKAJA TEST
                     "data": null
                 }
     4. UPDATE USER 
-            - URL => /user/{id}
-            - Method : PUT
-            - Body :
-                - Contoh Body
+        - URL => /user/{id}
+        - Method : PUT
+        - Body :
+            - Contoh Body
                 {
                     "nama_user": "Dinda Maharani",
                     "tanggal_lahir": "1998-11-01",
@@ -135,11 +135,11 @@ LINKAJA TEST
                     "pekerjaan": "4",
                     "pendidikan": "5"
                 }
-            - Response jika Sukses :
-                - Contoh URL :
-                    localhost:8080/user/4bfb21b6-4bee-4265-bd24-2e00906b5cf5
-                - Code : 200
-                - Contoh Content : 
+        - Response jika Sukses :
+            - Contoh URL :
+                localhost:8080/user/4bfb21b6-4bee-4265-bd24-2e00906b5cf5
+            - Code : 200
+            - Contoh Content : 
                     {
                         "status": 200,
                         "message": "Success",
@@ -152,12 +152,12 @@ LINKAJA TEST
                             "pendidikan": "5"
                         }
                     }
-            - Response jika Gagal :
-                - Contoh URL :
-                    localhost:8080/user/123
-                - Code : 404 
-                - Method : POST
-                - Contoh Content :
+        - Response jika Gagal :
+            - Contoh URL :
+                localhost:8080/user/123
+            - Code : 404 
+            - Method : POST
+            - Contoh Content :
                 {
                         "status": 404,
                         "message": "Failed",
@@ -227,7 +227,7 @@ LINKAJA TEST
                     localhost:8080/admin/user/4bfb21b6-4bee-4265-bd24-2e00906b5cf5
                 - Code : 200
                 - Contoh Content : 
-                sama seperti pada GET USER BY ID di atas
+                    sama seperti pada GET USER BY ID di atas
             - Response jika Akun Tidak Ditemukan :
                 - Contoh URL :
                     localhost:8080/user/123
